@@ -1,4 +1,5 @@
 function minhaPontuacao(stringPontuacoes) {
+
     let pontuacoes = stringPontuacoes.split(" ")
     let qtdQuebraDeRecords = 0
     let piorJogo = 1
@@ -14,6 +15,7 @@ function minhaPontuacao(stringPontuacoes) {
             piorJogo = i+1;
         }
     }
+    
     return [qtdQuebraDeRecords, piorJogo]
+    
 }
-console.log(minhaPontuacao("10 20 20 8 25 3 0 30 1"))
